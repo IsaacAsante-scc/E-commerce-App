@@ -18,7 +18,7 @@ struct ProductCard: View {
                 Image(product.image)
                     .resizable()
                     .cornerRadius(20)
-                    .frame(width: 200)
+                    .frame(width: 180)
                     .scaledToFit()
                 // VStack for product name and price
                 VStack(alignment: .leading) {
@@ -30,11 +30,11 @@ struct ProductCard: View {
                         .foregroundColor(Color.red)
                 }
                 .padding()
-                .frame(width: 200, alignment: .leading)
+                .frame(width: 180, alignment: .leading)
                 .background(.ultraThinMaterial)
                 .cornerRadius(20)
             }
-            .frame(width: 200, height: 250)
+            .frame(width: 180, height: 240)
             .shadow(radius: 3)
             
             // Button for adding product to cart
