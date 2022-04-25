@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		915AE6F22810E94B0089E71D /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915AE6F12810E94B0089E71D /* CartButton.swift */; };
+		915AE6F22810E94B0089E71D /* BagButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915AE6F12810E94B0089E71D /* BagButton.swift */; };
 		91BB1027280CF76100B7E511 /* E_commerce_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BB1026280CF76100B7E511 /* E_commerce_AppApp.swift */; };
 		91BB1029280CF76100B7E511 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BB1028280CF76100B7E511 /* ContentView.swift */; };
 		91BB102B280CF76300B7E511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91BB102A280CF76300B7E511 /* Assets.xcassets */; };
@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		915AE6F12810E94B0089E71D /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
+		915AE6F12810E94B0089E71D /* BagButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagButton.swift; sourceTree = "<group>"; };
 		91BB1023280CF76100B7E511 /* E-commerce App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-commerce App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BB1026280CF76100B7E511 /* E_commerce_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E_commerce_AppApp.swift; sourceTree = "<group>"; };
 		91BB1028280CF76100B7E511 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				91BB103A280D08E500B7E511 /* ProductCard.swift */,
-				915AE6F12810E94B0089E71D /* CartButton.swift */,
+				915AE6F12810E94B0089E71D /* BagButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -174,7 +174,7 @@
 				91BB1029280CF76100B7E511 /* ContentView.swift in Sources */,
 				91BB1027280CF76100B7E511 /* E_commerce_AppApp.swift in Sources */,
 				91BB103B280D08E500B7E511 /* ProductCard.swift in Sources */,
-				915AE6F22810E94B0089E71D /* CartButton.swift in Sources */,
+				915AE6F22810E94B0089E71D /* BagButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

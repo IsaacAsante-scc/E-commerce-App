@@ -21,6 +21,9 @@ struct ContentView: View {
                 .padding()
             }
             .navigationTitle(Text("SDMN Clothing"))
+            .toolbar {
+                BagButton(numberOfProducts: 1)
+            }
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
