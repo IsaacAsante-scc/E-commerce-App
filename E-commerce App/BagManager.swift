@@ -21,9 +21,12 @@ class BagManager: ObservableObject {
         total = total + product.price
     }
     
-    // Function to remove product from product array and update price
+    // Function to remove first instance of product from product array and update price
     func removeFromBag(product: Product) {
-        products = products.filter { $0.id != product.id }
+        if let removeProduct = products.firstIndex(where: {$0.id == product.id}) {
+            products.remove(at: removeProduct)
+        }
+        
         total = total - product.price
     }
 }

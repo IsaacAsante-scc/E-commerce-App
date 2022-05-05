@@ -12,6 +12,7 @@ struct ProductRow: View {
     var product: Product
     
     var body: some View {
+        // Product row for items added to bag
         HStack(spacing: 20) {
             Image(product.image)
                 .resizable()
@@ -19,6 +20,7 @@ struct ProductRow: View {
                 .frame(width: 50)
                 .cornerRadius(10)
             
+            // Name and price of product
             VStack(alignment: .leading, spacing: 10) {
                 Text(product.name)
                     .bold()
@@ -26,8 +28,10 @@ struct ProductRow: View {
                 Text("$\(product.price)")
             }
             
+            // Spacer betwwwn product text/price and remove icon
             Spacer()
             
+            // Trash icon to remove product from cart on tap
             Image(systemName: "trash")
                 .foregroundColor(.red)
                 .onTapGesture {

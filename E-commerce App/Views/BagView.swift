@@ -12,7 +12,24 @@ struct BagView: View {
     
     var body: some View {
         ScrollView {
-            Text("Your bag is empty!")
+            // If else statement to check if there are any items in bag and display message or product row
+            if bagManager.products.count > 0 {
+                ForEach(bagManager.products, id: \.id) {
+                    product in
+                    ProductRow(product: product)
+                }
+                
+                HStack {
+                    Text("Your bag total is ")
+                    Spacer()
+                    Text("$\(bagManager.total).00")
+                        .foregroundColor(Color.blue)
+                        .bold()
+                }
+                .padding()
+            } else {
+                Text("Your bag is empty!")
+            }
         }
         .navigationTitle(Text("My Bag"))
         .padding(.top)
