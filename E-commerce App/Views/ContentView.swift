@@ -23,6 +23,10 @@ struct ContentView: View {
                     }
                 }
                 .padding()
+                
+                PaymentButton(action: {})
+                    .padding()
+                
             }
             .navigationTitle(Text("SDMN Clothing"))
             .toolbar {

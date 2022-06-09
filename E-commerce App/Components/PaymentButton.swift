@@ -12,7 +12,10 @@ struct PaymentButton: View {
     var action: () -> Void
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Representable(action: action)
+            .frame(minWidth: 100, maxWidth: 400)
+            .frame(height: 45)
+            .frame(maxWidth: .infinity)
     }
 }
 
@@ -41,7 +44,7 @@ extension PaymentButton {
     }
     
     class Coordinator: NSObject {
-        var action: () -> Void 
+        var action: () -> Void
         var button = PKPaymentButton(paymentButtonType: .checkout, paymentButtonStyle: .automatic)
         
         init(action: @escaping () -> Void) {
