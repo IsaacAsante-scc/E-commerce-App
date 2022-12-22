@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ProductCard: View {
+    @EnvironmentObject var bagManager: BagManager
+    
     var product: Product
     
     // Product Card for each SDMN Clothing product
@@ -39,7 +41,7 @@ struct ProductCard: View {
             
             // Button for adding product to cart
             Button {
-                print("Added to bag!")
+                bagManager.addToBag(product: product)
             } label: {
                 Image(systemName: "plus")
                     .padding(10)
@@ -55,5 +57,6 @@ struct ProductCard: View {
 struct ProductCard_Previews: PreviewProvider {
     static var previews: some View {
         ProductCard(product: productList[0])
+            .environmentObject(BagManager())
     }
 }
